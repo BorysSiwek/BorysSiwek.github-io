@@ -1,0 +1,27 @@
+<html> 
+     <head> 
+           <script type="text/javascript"> 
+              function pociag(kolor_k,wagony_k,rodzaj_k)//początek konstruktora 
+  { 
+   this.kolor=kolor_k; 
+   this.wagony=wagony_k; 
+   this.rodzaj=rodzaj_k;   
+  }//koniec konstruktora 
+              pociag.prototype.wypisz = function () //definicja metody 
+      { 
+         alert(this.kolor + ' ' + this.wagony+ ' ' + this.rodzaj); 
+      }; 
+  var pociag1 = new pociag("Czarny", "13 wagonów", "pkp"); // nowy obiekt osoba1 
+  var pociag2 = new pociag('żółty', '15 wagonów', 'lokalny'); 
+  pociag1.wypisz(); // uruchomienie metody wypisz() dotyczącej osoby 1 
+  pociag2.wypisz(); 
+                document.write("dostęp do właściwości"+"<br>"); 
+// poniżej dostęp do pól osoby1 
+     document.write("pociąg pierwszy"+"   "+pociag1.kolor+"   "+pociag1.wagony+"   "+pociag1.rodzaj); 
+            </script> 
+     </head> 
+<body> 
+ <br> 
+   programowanie obiektowe   
+</body> 
+</html> 
