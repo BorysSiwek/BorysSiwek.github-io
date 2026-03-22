@@ -1,0 +1,2 @@
+document.write("ostatnia modyfikacja strony".fontcolor("green").bold().fontsize(6)+"<br>"); 
+document.write(document.lastModified.fontcolor("black").fontsize(6)+"<br>");
