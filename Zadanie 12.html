@@ -15,7 +15,9 @@ var D2=parseFloat(D2_siw);
 var G1=parseFloat(G1_siw);
 var G2=parseFloat(G2_siw);
 var suma;
-
+if (G1<=1 &&  G1>24 &&  G2<1 && G2>24) {
+    alert("Podaj godzin=e z zakresu 1–24!");
+}
 if (D1<=1 &&  D1>31 &&  D2<1 && D2>31) {
     alert("Podaj dni z zakresu 1–31!");
 }
@@ -23,7 +25,7 @@ suma = ((D2 - D1) * 86400) + (G2 - G1) * 3600;
 if (suma<0) {
     suma = (suma * (-1));
 }
-document.write("D1 = "+D1+"<br>D2 = "+D2+"<br>Ilość sekund = "+suma+"<br>");
+document.write("D1 = "+D1+"<br>D2 = "+D2+"<br>G1 = "+G1+"<br>G2 = "+G2+"<br>Ilość sekund = "+suma+"<br>");
 </script>
 </div>
 </body>
