@@ -1,0 +1,26 @@
+<!DOCTYPE html>  
+<html lang="pl-PL">  
+<meta charset="utf8">
+<title>Z40 oraz Siwek</title>
+<body> 
+ <div style="color:red;font-size:50px;"> 
+    <script language="JavaScript"> 
+  var x=prompt("podaj argument x=",""); 
+               var x_siw=parseFloat(x); 
+    document.write("Wykonał Borys Siwek <br>"); 
+    document.write("czytany argument x="+x_siw+"<br>");     
+ 
+                 function f_siw(x_siw) { 
+                            if((x_siw>=2)) {return 9;} 
+                            if((x_siw>-2)&&(x_siw<0)) {return (x_siw+1)*(x_siw+1);} 
+                            if((x_siw>=0)&&(x_siw<2)) {return ((x_siw)*(x_siw)*(x_siw))+1;} 
+                            if((x_siw<-2)) {return 1;} 
+                  } 
+ 
+               document.write("f="+f_siw(x_siw).toFixed(2)+"<br>"); 
+ 
+           </script> 
+ </div> 
+ </body> 
+</html> 
+<!--  Siwek Z40_JS  --> 
