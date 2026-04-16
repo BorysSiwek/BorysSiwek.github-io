@@ -1,0 +1,27 @@
+<html> 
+ <head> 
+  <meta charset="UTF-8"> 
+ </head> 
+<body> 
+<div style="color:red;font-size:30px;">
+ <script language="JavaScript"> 
+  var liczba1=prompt("liczba1=")
+  var liczba2=prompt("liczba2=")
+  var x1_siw=parseFloat(liczba1);
+  var x2_siw=parseFloat(liczba2);
+  document.write("X1="+x1_siw+"     X2="+x2_siw+"<br>");
+
+  var y1_siw=3*Math.pow(x1_siw,5/7)
+  document.write("y1="+y1_siw.toFixed(2)+"<br>");
+
+  rad_x1_siw=(x1_siw*Math.PI)/180;
+  var y2_siw=2*Math.cos(rad_x1_siw)+3*Math.sin(rad_x1_siw);
+  document.write("y2="+y2_siw.toFixed(2)+"<br>");
+
+  akuku=Math.pow(x1_siw,5)+2*Math.pow(x2_siw,4);
+  y3_siw=Math.pow(akuku,1/3)*Math.abs(x1_siw-x2_siw);
+  document.write("y3="+y3_siw.toFixed(2)+"<br>");
+ </script>
+</div>
+</body> 
+</html> 

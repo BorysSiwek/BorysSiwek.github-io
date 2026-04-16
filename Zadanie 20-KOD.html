@@ -1,0 +1,59 @@
+<html>
+<body>
+<textarea>
+
+<html> 
+ <head> 
+  <meta charset="UTF-8"> 
+ </head> 
+<body> 
+ <script language="JavaScript"> 
+  function AB_siw(){ 
+    var xa_siw= parseFloat(document.getElementById('xa_siw').value);
+    var ya_siw= parseFloat(document.getElementById('ya_siw').value);
+    var xb_siw= parseFloat(document.getElementById('xb_siw').value);
+    var yb_siw= parseFloat(document.getElementById('yb_siw').value);
+    var dlugosc;
+    dlugosc=Math.sqrt(Math.pow(xa_siw-xb_siw,2) + Math.pow(ya_siw-yb_siw,2));
+    document.getElementById("dlugosc").innerHTML="Dlugosc tego boku "+ dlugosc.toFixed(2);  
+  } 
+
+function AC_siw(){ 
+    var xa_siw= parseFloat(document.getElementById('xa_siw').value);
+    var ya_siw= parseFloat(document.getElementById('ya_siw').value);
+    var xb_siw= parseFloat(document.getElementById('xc_siw').value);
+    var yb_siw= parseFloat(document.getElementById('yc_siw').value);
+    var dlugosc;
+    dlugosc=Math.sqrt(Math.pow(xa_siw-xb_siw,2) + Math.pow(ya_siw-yb_siw,2));
+    document.getElementById("dlugosc").innerHTML="Dlugosc tego boku "+ dlugosc.toFixed(2);  
+  }
+  
+  function BC_siw(){ 
+    var xa_siw= parseFloat(document.getElementById('xb_siw').value);
+    var ya_siw= parseFloat(document.getElementById('yb_siw').value);
+    var xb_siw= parseFloat(document.getElementById('xc_siw').value);
+    var yb_siw= parseFloat(document.getElementById('yc_siw').value);
+    var dlugosc;
+    dlugosc=Math.sqrt(Math.pow(xa_siw-xb_siw,2) + Math.pow(ya_siw-yb_siw,2));
+    document.getElementById("dlugosc").innerHTML="Dlugosc tego boku "+ dlugosc.toFixed(2);  
+  }
+ </script> 
+  <h1>Wszystko o Trójkącie</h1><br><br> 
+  Podaj współżędne Xa: <input type="text" id="xa_siw" value="podaj wartość"><br>
+  Podaj współżędne Ya: <input type="text" id="ya_siw" value="podaj wartość"><br><br>
+
+  Podaj współżędne Xb: <input type="text" id="xb_siw" value="podaj wartość"><br>
+  Podaj współżędne Yb: <input type="text" id="yb_siw" value="podaj wartość"><br><br>
+
+  Podaj współżędne Xc: <input type="text" id="xc_siw" value="podaj wartość"><br>
+  Podaj współżędne Yc: <input type="text" id="yc_siw" value="podaj wartość"><br><br>
+
+  <input type="button" name="AB" id="AB" value="Dlugosc AB" Onclick="AB_siw()"><br><br> 
+  <input type="button" name="AB" id="AB" value="Dlugosc AC" Onclick="AC_siw()"><br><br>
+  <input type="button" name="AB" id="AB" value="Dlugosc AC" Onclick="BC_siw()"><br><br>
+  <div  style="color:red;font-size:50px;" id="dlugosc"></div> 
+</body> 
+</html> 
+</textarea>
+</body>
+</html>
